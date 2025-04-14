@@ -17,3 +17,17 @@ print([len(i) for i in tp])
 d = {100:"apple", 200:"kiwi"}
 print([v.upper() for v in d.values()])
 
+print("---필터링함수---")
+def getBiggerThan20(i):
+    return i >20
+
+lst = [10,25,30]
+itemL = filter(getBiggerThan20, lst)
+for item in itemL:
+    print(item)
+
+print("---람다함수---")
+lst = [10,25,30]
+itemL = filter(lambda x:x>20, lst)
+for item in itemL:
+    print(item)
