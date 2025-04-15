@@ -66,3 +66,5 @@ def run_tests():
     e1.printInfo()
 
     print("\n모든 테스트 통과!")
+
+run_tests()
