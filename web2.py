@@ -22,10 +22,10 @@ for i in range(0,10):
         title = tag.text.strip() #strip() : 앞뒤 공백 제거
         if re.search("아이패드", title):
             print(title)
-            f.write(title + "\n")   
+            f.write(title + "\n")
     #<span class="category fixed" title="판매">판매</span>
     #						<span class="subject_fixed" data-role="list-title-text" title="아이패드 미니6 64기가">
     #							아이패드 미니6 64기가
     #						</span>
 
-    f.close()
+f.close()
